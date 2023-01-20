@@ -1,37 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.header{
-    display: flex;
-    height: 75px;
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
 }
-.header-logo img{
-    width: 300px;
-    margin-left: 50px;
+.header {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header-logo img {
+  width: 300px;
+  margin-left: 50px;
+}
+.header-logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.header-links {
+  width: 50%;
 
+  height: 75px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
-.header-logo{
-    width: 50%;
-    display: flex;
-    align-items: center;
+.header-links ul {
+  width: 50%;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 16px;
+}
 
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
 }
-.header-links{
-    width: 50%;
 
-    height: 75px;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
 }
-.header-links ul{
-    width: 50%;
-    display: flex;
-    font-family: 'Lato', sans-serif;
-    list-style: none;
-    justify-content:space-between;
-    font-size: 16px;
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
 }
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+/* section {
+  display: block;
+} */
