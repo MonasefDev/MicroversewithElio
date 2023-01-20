@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    height: 75px;
+}
+.header-logo img{
+    width: 300px;
+    margin-left: 50px;
+
+}
+.header-logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.header-links{
+    width: 50%;
+
+    height: 75px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+.header-links ul{
+    width: 50%;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    justify-content:space-between;
+    font-size: 16px;
+}
