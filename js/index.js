@@ -1,22 +1,21 @@
-let total = 0;
-let items = [];
-let values = [];
+let cart = {
+  total: 0,
+  items: {},
+};
 
 function createItemsList() {
-  let string = "";
-  for (let idx in items) {
-    string += `${items[idx]}: ${values[idx]}\n`;
-  }
-  return string;
+  return Object.entries(cart.items)
+    .map(([item, value]) => `${item}: ${value}`)
+    .join("\n");
 }
 
 function addItem(id, value) {
-  if (items.includes(id)) {
+  if (cart.items[id]) {
     alert("This item was added already!");
-    return 1;
+    return;
   }
-  total += parseInt(value);
-  items.push(id);
-  values.push(value);
-  alert(`Your cart:\n${createItemsList()}\nYour total is: ${total}`);
+
+  cart.items[id] = value;
+  cart.total += parseInt(value);
+  alert(`Your cart:\n${createItemsList()}\nYour total is: ${cart.total}`);
 }
