@@ -6,6 +6,7 @@ body {
   background-color: #eee;
   font-family: "Lato", sans-serif;
 }
+
 .header {
   background: #eee;
   display: flex;
@@ -24,9 +25,17 @@ body {
   display: flex;
   align-items: center;
 }
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+}
 .header-links {
   width: 50%;
-
   height: 75px;
   margin-right: 50px;
   display: flex;
@@ -196,9 +205,7 @@ footer {
 footer > ul > li {
   padding: 0 10px;
 }
-li {
-  list-style: none;
-}
+
 a {
   color: #000;
   text-decoration: none;
