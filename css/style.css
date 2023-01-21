@@ -184,3 +184,31 @@ li {
 .product > ol > li {
   padding: 5px 0;
 }
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
