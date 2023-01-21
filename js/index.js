@@ -12,7 +12,7 @@ function createItemsList() {
 
 function addItem(id, value) {
   if (items.includes(id)) {
-    console.log("This item was added already!");
+    alert("This item was added already!");
     return 1;
   }
   total += parseInt(value);
