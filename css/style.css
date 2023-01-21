@@ -178,9 +178,11 @@ form {
   background: transparent;
   cursor: pointer;
 }
-li {
-  list-style: none;
+
+.product > ol {
+  margin: 15px 0;
 }
+
 .product > ol > li {
   padding: 5px 0;
 }
@@ -194,7 +196,9 @@ footer {
 footer > ul > li {
   padding: 0 10px;
 }
-
+li {
+  list-style: none;
+}
 a {
   color: #000;
   text-decoration: none;
